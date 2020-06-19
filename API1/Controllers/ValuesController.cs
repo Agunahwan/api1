@@ -42,8 +42,9 @@ namespace API1.Controllers
         }
 
         // PUT api/values/5
-        public void Put(int id, [FromBody]string value)
+        public string Put(int id, [FromBody]string value)
         {
+            return "Change id = " + id.ToString() + " with value = " + value;
         }
 
         // DELETE api/values/5
